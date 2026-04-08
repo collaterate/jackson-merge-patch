@@ -1,8 +1,14 @@
+# Build output
+**/build/
+**/target/
+/tmp/
+
 # Compiled class file
 *.class
 
-# Log file
+# Log files
 *.log
+!.transformation/**/*.log
 
 # BlueJ files
 *.ctxt
@@ -10,25 +16,34 @@
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
-/build/
-/tmp/
-.project
+# Package files
 *.war
 *.ear
 *.zip
 *.tar.gz
 *.rar
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+# Virtual machine crash logs
 hs_err_pid*
 
-#gradle files
+# Gradle files
 .gradle
-/.classpath
-/bin
-/.settings
-.factorypath
 
-# mac stuff
+# IDE and editor files
+*.iml
+*.ipr
+*.iws
+.idea/
+.vscode/
+.project
+.classpath
+.factorypath
+.settings/
+**/bin/
+*.swp
+*.swo
+*~
+
+# OS artifacts
 .DS_Store
+Thumbs.db

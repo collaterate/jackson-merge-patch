@@ -1,5 +1,5 @@
 dependencies {
-    compile rootProject
+    compile project(':jackson-merge-patch-core')
     
     compile 'org.apache.commons:commons-lang3:3.5'
     compile 'javax.validation:validation-api:1.1.0.Final'

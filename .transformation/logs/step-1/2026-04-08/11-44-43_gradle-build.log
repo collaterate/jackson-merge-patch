@@ -1,0 +1,31 @@
+> Task :clean
+> Task :jackson-merge-patch-core:clean
+> Task :jackson-merge-patch-validations:clean
+> Task :compileJava NO-SOURCE
+> Task :processResources NO-SOURCE
+> Task :classes UP-TO-DATE
+> Task :jar
+> Task :assemble
+> Task :check
+> Task :build
+> Task :jackson-merge-patch-core:compileJava
+> Task :jackson-merge-patch-core:processResources NO-SOURCE
+> Task :jackson-merge-patch-core:classes
+> Task :jackson-merge-patch-core:jar
+> Task :jackson-merge-patch-core:sourcesJar
+> Task :jackson-merge-patch-core:assemble
+> Task :jackson-merge-patch-core:check
+> Task :jackson-merge-patch-core:build
+> Task :jackson-merge-patch-validations:compileJava
+> Task :jackson-merge-patch-validations:processResources NO-SOURCE
+> Task :jackson-merge-patch-validations:classes
+> Task :jackson-merge-patch-validations:jar
+> Task :jackson-merge-patch-validations:assemble
+> Task :jackson-merge-patch-validations:check
+> Task :jackson-merge-patch-validations:build
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 5.0.
+See https://docs.gradle.org/4.8.1/userguide/command_line_interface.html#sec:command_line_warnings
+
+BUILD SUCCESSFUL in 3s
+9 actionable tasks: 9 executed
