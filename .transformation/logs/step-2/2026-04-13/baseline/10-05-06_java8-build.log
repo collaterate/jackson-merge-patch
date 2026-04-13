@@ -1,0 +1,65 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jackson Merge Patch                                                [pom]
+[INFO] Jackson Merge Patch Core                                           [jar]
+[INFO] Jackson Merge Patch Validations                                    [jar]
+[INFO] 
+[INFO] ----------< com.github.jeffnelson:jackson-merge-patch-parent >----------
+[INFO] Building Jackson Merge Patch 2.0.0                                 [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ jackson-merge-patch-parent ---
+[INFO] 
+[INFO] --- jacoco:0.8.10:prepare-agent (prepare-agent) @ jackson-merge-patch-parent ---
+[INFO] argLine set to -javaagent:/Users/francisco.acevedo/.m2/repository/org/jacoco/org.jacoco.agent/0.8.10/org.jacoco.agent-0.8.10-runtime.jar=destfile=/Applications/eclipse/workspace/jackson-merge-patch/target/jacoco.exec
+[INFO] 
+[INFO] -----------< com.github.jeffnelson:jackson-merge-patch-core >-----------
+[INFO] Building Jackson Merge Patch Core 2.0.0                            [2/3]
+[INFO]   from jackson-merge-patch-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ jackson-merge-patch-core ---
+[INFO] Deleting /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-core/target
+[INFO] 
+[INFO] --- jacoco:0.8.10:prepare-agent (prepare-agent) @ jackson-merge-patch-core ---
+[INFO] argLine set to -javaagent:/Users/francisco.acevedo/.m2/repository/org/jacoco/org.jacoco.agent/0.8.10/org.jacoco.agent-0.8.10-runtime.jar=destfile=/Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-core/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jackson-merge-patch-core ---
+[INFO] skip non existing resourceDirectory /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ jackson-merge-patch-core ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 5 source files with javac [debug target 1.8] to target/classes
+[INFO] 
+[INFO] -------< com.github.jeffnelson:jackson-merge-patch-validations >--------
+[INFO] Building Jackson Merge Patch Validations 2.0.0                     [3/3]
+[INFO]   from jackson-merge-patch-validations/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ jackson-merge-patch-validations ---
+[INFO] Deleting /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-validations/target
+[INFO] 
+[INFO] --- jacoco:0.8.10:prepare-agent (prepare-agent) @ jackson-merge-patch-validations ---
+[INFO] argLine set to -javaagent:/Users/francisco.acevedo/.m2/repository/org/jacoco/org.jacoco.agent/0.8.10/org.jacoco.agent-0.8.10-runtime.jar=destfile=/Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-validations/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jackson-merge-patch-validations ---
+[INFO] skip non existing resourceDirectory /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-validations/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ jackson-merge-patch-validations ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 8 source files with javac [debug target 1.8] to target/classes
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Jackson Merge Patch 2.0.0:
+[INFO] 
+[INFO] Jackson Merge Patch ................................ SUCCESS [  1.062 s]
+[INFO] Jackson Merge Patch Core ........................... SUCCESS [  3.621 s]
+[INFO] Jackson Merge Patch Validations .................... SUCCESS [  0.601 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  5.363 s
+[INFO] Finished at: 2026-04-13T10:05:13-06:00
+[INFO] ------------------------------------------------------------------------

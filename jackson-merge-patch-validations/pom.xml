@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.github.jeffnelson</groupId>
         <artifactId>jackson-merge-patch-parent</artifactId>
-        <version>2.0.0</version>
+        <version>3.0.0</version>
     </parent>
 
     <artifactId>jackson-merge-patch-validations</artifactId>
@@ -18,8 +18,8 @@
 
     <properties>
         <commons-lang3.version>3.5</commons-lang3.version>
-        <validation-api.version>1.1.0.Final</validation-api.version>
-        <hibernate-validator.version>5.3.6.Final</hibernate-validator.version>
+        <validation-api.version>2.0.1.Final</validation-api.version>
+        <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
     </properties>
 
     <dependencies>

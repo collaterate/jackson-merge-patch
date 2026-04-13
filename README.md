@@ -44,14 +44,12 @@ jackson will only call setters for fields that were actually present in the JSON
 ## Project Setup
 
 ### Structure
-This project is organized as a multi-module build with both Gradle and Maven support:
+This project is organized as a Maven multi-module build (requires Java 21):
 - **jackson-merge-patch-core** — Core Jackson plugin with `PatchField`, `MergePatchModule`, and `PatchFieldDeserializer`
 - **jackson-merge-patch-validations** — Optional validation constraint annotations (`@PatchNotNull`, `@PatchStringRequired`, `@PatchMin`, `@PatchMax`) for `PatchField` types
 
 ### Building
 - With Maven: `./mvnw clean package`
-- With Gradle: `./gradlew clean build`
 
 ### Testing
 - With Maven: `./mvnw test`
-- With Gradle: `./gradlew test`
