@@ -46,7 +46,7 @@ jackson will only call setters for fields that were actually present in the JSON
 ### Structure
 This project is organized as a Maven multi-module build (requires Java 21):
 - **jackson-merge-patch-core** — Core Jackson plugin with `PatchField`, `MergePatchModule`, and `PatchFieldDeserializer`
-- **jackson-merge-patch-validations** — Optional validation constraint annotations (`@PatchNotNull`, `@PatchStringRequired`, `@PatchMin`, `@PatchMax`) for `PatchField` types
+- **jackson-merge-patch-validations** — Optional validation constraint annotations (`@PatchNotNull`, `@PatchStringRequired`, `@PatchMin`, `@PatchMax`) for `PatchField` types, using Jakarta Validation (jakarta.validation)
 
 ### Building
 - With Maven: `./mvnw clean package`

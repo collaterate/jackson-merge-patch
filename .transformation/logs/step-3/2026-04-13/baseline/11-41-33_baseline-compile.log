@@ -69,12 +69,12 @@
 [INFO] ------------------------------------------------------------------------
 [INFO] Reactor Summary for Jackson Merge Patch 3.0.0:
 [INFO] 
-[INFO] Jackson Merge Patch ................................ SUCCESS [  0.419 s]
-[INFO] Jackson Merge Patch Core ........................... SUCCESS [  1.686 s]
-[INFO] Jackson Merge Patch Validations .................... SUCCESS [  0.914 s]
+[INFO] Jackson Merge Patch ................................ SUCCESS [  0.548 s]
+[INFO] Jackson Merge Patch Core ........................... SUCCESS [  2.179 s]
+[INFO] Jackson Merge Patch Validations .................... SUCCESS [  1.056 s]
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
 [INFO] ------------------------------------------------------------------------
-[INFO] Total time:  3.105 s
-[INFO] Finished at: 2026-04-13T10:20:42-06:00
+[INFO] Total time:  3.864 s
+[INFO] Finished at: 2026-04-13T11:41:38-06:00
 [INFO] ------------------------------------------------------------------------

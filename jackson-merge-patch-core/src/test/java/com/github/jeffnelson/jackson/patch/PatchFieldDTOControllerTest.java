@@ -1,8 +1,8 @@
 
 package com.github.jeffnelson.jackson.patch;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
@@ -12,12 +12,13 @@ import java.io.InputStream;
 import java.nio.charset.Charset;
 
 import org.apache.commons.io.IOUtils;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.test.web.servlet.MockMvc;
@@ -57,9 +58,9 @@ public class PatchFieldDTOControllerTest {
 
     MockMvc mvc;
 
-    @Before
+    @BeforeEach
     public void setup() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
 
         // setup the HttpMessage converter to use ObjectMapper with the MergePatchModule
         ObjectMapper om = new ObjectMapper();
@@ -394,8 +395,8 @@ public class PatchFieldDTOControllerTest {
     }
 
     <T> void assertPatchField(String fieldName, PatchField<T> expected, PatchField<T> actual) {
-        assertEquals(combine(fieldName, " shouldPatch incorrect"), expected.shouldPatch(), actual.shouldPatch());
-        assertEquals(combine(fieldName, " value incorrect"), expected.getValue(), actual.getValue());
+        assertEquals(expected.shouldPatch(), actual.shouldPatch(), combine(fieldName, " shouldPatch incorrect"));
+        assertEquals(expected.getValue(), actual.getValue(), combine(fieldName, " value incorrect"));
     }
 
     String combine(String prefix, String name) {
@@ -437,7 +438,7 @@ public class PatchFieldDTOControllerTest {
 
         @Override
         protected ResponseEntity<Object> handleExceptionInternal(
-                Exception ex, Object body, HttpHeaders headers, HttpStatus status, WebRequest request) {
+                Exception ex, Object body, HttpHeaders headers, HttpStatusCode status, WebRequest request) {
             caught = ex;
             return super.handleExceptionInternal(ex, body, headers, status, request);
         }

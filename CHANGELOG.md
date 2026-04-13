@@ -5,6 +5,29 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v4.0.0] Spring Boot 3.5 and dependency upgrade (2026-04-13)
+
+### Changed
+- Upgraded Spring Boot from 1.5.22.RELEASE to 3.5.13
+- Migrated javax.validation namespace to jakarta.validation (8 source files, 2 annotation message keys)
+- Migrated JUnit 4 to JUnit 5 (4 test files — @Test, @Before → @BeforeEach, assertion parameter order)
+- Migrated Mockito initMocks to openMocks for Mockito 5 compatibility (2 test files)
+- Updated Spring MVC exception handler signatures for Spring 6 HttpStatusCode API (2 test files)
+- Updated jackson-databind from 2.15.4 to 2.21.2 (BOM-managed)
+- Updated lombok from 1.18.38 to 1.18.44
+- Updated commons-lang3 from 3.5 to 3.20.0
+- Updated guava from 28.0-jre to 33.5.0-jre
+- Updated commons-io from 2.6 to 2.21.0
+- Updated hibernate-validator from 6.2.5.Final to 8.0.3.Final (BOM-managed)
+- Updated mockito-core from 4.11.0 to 5.17.0 (BOM-managed)
+- Updated byte-buddy from 1.12.23 to 1.17.8 (BOM-managed)
+- Updated all Maven plugins to latest stable versions
+- Introduced Spring Boot BOM for centralized dependency version management
+
+### Removed
+- javax.validation:validation-api dependency (replaced by jakarta.validation:jakarta.validation-api)
+- Explicit mockito-core and byte-buddy version overrides (now BOM-managed)
+
 ## [v3.0.0] Java 8 to Java 21 upgrade (2026-04-13)
 
 ### Changed

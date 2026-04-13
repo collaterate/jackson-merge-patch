@@ -1,8 +1,8 @@
 
 package com.github.jeffnelson.jackson.patch.validator;
 
-import javax.validation.ConstraintValidator;
-import javax.validation.ConstraintValidatorContext;
+import jakarta.validation.ConstraintValidator;
+import jakarta.validation.ConstraintValidatorContext;
 
 import com.github.jeffnelson.jackson.patch.PatchField;
 import com.github.jeffnelson.jackson.patch.validator.constraints.PatchNotNull;

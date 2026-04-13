@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.github.jeffnelson</groupId>
         <artifactId>jackson-merge-patch-parent</artifactId>
-        <version>3.0.0</version>
+        <version>4.0.0</version>
     </parent>
 
     <artifactId>jackson-merge-patch-core</artifactId>
@@ -30,10 +30,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>

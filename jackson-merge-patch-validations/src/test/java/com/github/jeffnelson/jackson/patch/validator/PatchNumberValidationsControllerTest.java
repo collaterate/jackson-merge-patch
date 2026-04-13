@@ -2,8 +2,8 @@
 package com.github.jeffnelson.jackson.patch.validator;
 
 import static org.hamcrest.CoreMatchers.hasItem;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.patch;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.jsonPath;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -14,18 +14,18 @@ import java.nio.charset.Charset;
 import java.util.List;
 import java.util.stream.Collectors;
 
-import javax.validation.Valid;
+import jakarta.validation.Valid;
 
 import org.apache.commons.io.IOUtils;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
 import org.mockito.MockitoAnnotations;
 import org.springframework.context.MessageSource;
 import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.context.support.ResourceBundleMessageSource;
 import org.springframework.http.HttpHeaders;
-import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
 import org.springframework.test.web.servlet.MockMvc;
@@ -69,9 +69,9 @@ public class PatchNumberValidationsControllerTest {
 
     MockMvc mvc;
 
-    @Before
+    @BeforeEach
     public void setup() {
-        MockitoAnnotations.initMocks(this);
+        MockitoAnnotations.openMocks(this);
 
         // setup the HttpMessage converter to use ObjectMapper with the MergePatchModule
         ObjectMapper om = new ObjectMapper();
@@ -137,8 +137,8 @@ public class PatchNumberValidationsControllerTest {
     }
 
     <T> void assertPatchField(String fieldName, PatchField<T> expected, PatchField<T> actual) {
-        assertEquals(combine(fieldName, " shouldPatch incorrect"), expected.shouldPatch(), actual.shouldPatch());
-        assertEquals(combine(fieldName, " value incorrect"), expected.getValue(), actual.getValue());
+        assertEquals(expected.shouldPatch(), actual.shouldPatch(), combine(fieldName, " shouldPatch incorrect"));
+        assertEquals(expected.getValue(), actual.getValue(), combine(fieldName, " value incorrect"));
     }
 
     String combine(String prefix, String name) {
@@ -166,7 +166,7 @@ public class PatchNumberValidationsControllerTest {
 
         @Override
         protected ResponseEntity<Object> handleMethodArgumentNotValid(MethodArgumentNotValidException ex,
-                HttpHeaders headers, HttpStatus status, WebRequest request) {
+                HttpHeaders headers, HttpStatusCode status, WebRequest request) {
             List<ErrorDTO> errors = ex.getBindingResult().getFieldErrors().stream()
                     .map(fieldError -> new ErrorDTO(fieldError.getField(), messageSource.getMessage(fieldError, LocaleContextHolder.getLocale())))
                     .collect(Collectors.toList());

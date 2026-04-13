@@ -1,0 +1,139 @@
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] Jackson Merge Patch                                                [pom]
+[INFO] Jackson Merge Patch Core                                           [jar]
+[INFO] Jackson Merge Patch Validations                                    [jar]
+[INFO] 
+[INFO] ----------< com.github.jeffnelson:jackson-merge-patch-parent >----------
+[INFO] Building Jackson Merge Patch 4.0.0                                 [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- toolchains:3.2.0:toolchain (default) @ jackson-merge-patch-parent ---
+[INFO] Required toolchain: jdk [ vendor='amazon' version='[21,22)' ]
+[INFO] Found matching toolchain for type jdk: JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (prepare-agent) @ jackson-merge-patch-parent ---
+[INFO] argLine set to -javaagent:/Users/francisco.acevedo/.m2/repository/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar=destfile=/Applications/eclipse/workspace/jackson-merge-patch/target/jacoco.exec
+[INFO] 
+[INFO] --- jacoco:0.8.14:report (report) @ jackson-merge-patch-parent ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- source:3.4.0:jar-no-fork (attach-sources) @ jackson-merge-patch-parent ---
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.5/maven-archiver-3.6.5.pom
+Progress (1): 796 BProgress (1): 1.8 kBProgress (1): 4.4 kBProgress (1): 4.7 kB                    Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.5/maven-archiver-3.6.5.pom (4.7 kB at 13 kB/s)
+[INFO] Artifact org.apache.maven.shared:maven-shared-components:pom:45 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [maven-central (https://repo.maven.apache.org/maven2, default, releases+snapshots), central (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases), snapshots (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases+snapshots)]
+[INFO] Artifact org.apache.maven.shared:maven-shared-components:pom:45 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [maven-central (https://repo.maven.apache.org/maven2, default, releases+snapshots), central (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases), snapshots (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases+snapshots)]
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/45/maven-shared-components-45.pom
+Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/apache/maven/shared/maven-shared-components/45/maven-shared-components-45.pom (0 B at 0 B/s)
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.2/plexus-archiver-4.10.2.pom
+Progress (1): 1.2 kBProgress (1): 3.1 kBProgress (1): 5.7 kBProgress (1): 7.0 kB                    Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.2/plexus-archiver-4.10.2.pom (7.0 kB at 86 kB/s)
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.28/plexus-interpolation-1.28.pom
+Progress (1): 1.3 kBProgress (1): 2.6 kBProgress (1): 3.4 kB                    Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.28/plexus-interpolation-1.28.pom (3.4 kB at 41 kB/s)
+[INFO] Artifact org.codehaus.plexus:plexus-archiver:pom:4.10.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [maven-central (https://repo.maven.apache.org/maven2, default, releases+snapshots), central (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases), snapshots (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases+snapshots)]
+[INFO] Artifact org.codehaus.plexus:plexus-archiver:pom:4.10.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [maven-central (https://repo.maven.apache.org/maven2, default, releases+snapshots), central (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases), snapshots (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases+snapshots)]
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.4/plexus-archiver-4.10.4.pom
+Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.4/plexus-archiver-4.10.4.pom (0 B at 0 B/s)
+[INFO] Artifact org.codehaus.plexus:plexus-archiver:jar:4.10.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [maven-central (https://repo.maven.apache.org/maven2, default, releases+snapshots), central (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases), snapshots (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases+snapshots)]
+[INFO] Artifact org.codehaus.plexus:plexus-archiver:jar:4.10.4 is present in the local repository, but cached from a remote repository ID that is unavailable in current build context, verifying that is downloadable from [maven-central (https://repo.maven.apache.org/maven2, default, releases+snapshots), central (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases), snapshots (https://binrepo.collaterate.net/artifactory/plugins-gradle, default, releases+snapshots)]
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.5/maven-archiver-3.6.5.jar
+Progress (1): 0.9/28 kBProgress (1): 2.3/28 kBProgress (1): 3.4/28 kBProgress (1): 4.7/28 kBProgress (1): 6.1/28 kBProgress (1): 7.5/28 kBProgress (1): 8.8/28 kBProgress (1): 10/28 kB Progress (1): 12/28 kBProgress (1): 13/28 kBProgress (1): 14/28 kBProgress (1): 16/28 kBProgress (1): 17/28 kBProgress (1): 18/28 kBProgress (1): 20/28 kBProgress (1): 21/28 kBProgress (1): 23/28 kBProgress (1): 24/28 kBProgress (1): 25/28 kBProgress (1): 27/28 kBProgress (1): 28/28 kBProgress (1): 28 kB                      Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/apache/maven/maven-archiver/3.6.5/maven-archiver-3.6.5.jar (28 kB at 399 kB/s)
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.28/plexus-interpolation-1.28.jar
+Downloading from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.4/plexus-archiver-4.10.4.jar
+Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-archiver/4.10.4/plexus-archiver-4.10.4.jar (0 B at 0 B/s)
+Progress (1): 0.9/87 kBProgress (1): 2.3/87 kBProgress (1): 3.6/87 kBProgress (1): 5.0/87 kBProgress (1): 6.4/87 kBProgress (1): 7.7/87 kBProgress (1): 9.1/87 kBProgress (1): 10/87 kB Progress (1): 12/87 kBProgress (1): 13/87 kBProgress (1): 15/87 kBProgress (1): 16/87 kBProgress (1): 17/87 kBProgress (1): 18/87 kBProgress (1): 20/87 kBProgress (1): 21/87 kBProgress (1): 22/87 kBProgress (1): 24/87 kBProgress (1): 25/87 kBProgress (1): 27/87 kBProgress (1): 28/87 kBProgress (1): 29/87 kBProgress (1): 31/87 kBProgress (1): 32/87 kBProgress (1): 33/87 kBProgress (1): 35/87 kBProgress (1): 36/87 kBProgress (1): 38/87 kBProgress (1): 39/87 kBProgress (1): 40/87 kBProgress (1): 42/87 kBProgress (1): 43/87 kBProgress (1): 44/87 kBProgress (1): 46/87 kBProgress (1): 47/87 kBProgress (1): 48/87 kBProgress (1): 50/87 kBProgress (1): 51/87 kBProgress (1): 53/87 kBProgress (1): 54/87 kBProgress (1): 55/87 kBProgress (1): 60/87 kBProgress (1): 64/87 kBProgress (1): 68/87 kBProgress (1): 72/87 kBProgress (1): 76/87 kBProgress (1): 81/87 kBProgress (1): 85/87 kBProgress (1): 87 kB                      Downloaded from maven-central: https://repo.maven.apache.org/maven2/org/codehaus/plexus/plexus-interpolation/1.28/plexus-interpolation-1.28.jar (87 kB at 362 kB/s)
+[INFO] 
+[INFO] -----------< com.github.jeffnelson:jackson-merge-patch-core >-----------
+[INFO] Building Jackson Merge Patch Core 4.0.0                            [2/3]
+[INFO]   from jackson-merge-patch-core/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- toolchains:3.2.0:toolchain (default) @ jackson-merge-patch-core ---
+[INFO] Required toolchain: jdk [ vendor='amazon' version='[21,22)' ]
+[INFO] Found matching toolchain for type jdk: JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (prepare-agent) @ jackson-merge-patch-core ---
+[INFO] argLine set to -javaagent:/Users/francisco.acevedo/.m2/repository/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar=destfile=/Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-core/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jackson-merge-patch-core ---
+[INFO] skip non existing resourceDirectory /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-core/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ jackson-merge-patch-core ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] Nothing to compile - all classes are up to date.
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ jackson-merge-patch-core ---
+[INFO] Copying 4 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ jackson-merge-patch-core ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 1 source file with javac [forked debug release 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.5:test (default-test) @ jackson-merge-patch-core ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.14:report (report) @ jackson-merge-patch-core ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ jackson-merge-patch-core ---
+[INFO] Set Build-Jdk-Spec based on toolchain in maven-jar-plugin JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] Building jar: /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-core/target/jackson-merge-patch-core-4.0.0.jar
+[INFO] 
+[INFO] --- source:3.4.0:jar-no-fork (attach-sources) @ jackson-merge-patch-core ---
+[INFO] Building jar: /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-core/target/jackson-merge-patch-core-4.0.0-sources.jar
+[INFO] 
+[INFO] -------< com.github.jeffnelson:jackson-merge-patch-validations >--------
+[INFO] Building Jackson Merge Patch Validations 4.0.0                     [3/3]
+[INFO]   from jackson-merge-patch-validations/pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- toolchains:3.2.0:toolchain (default) @ jackson-merge-patch-validations ---
+[INFO] Required toolchain: jdk [ vendor='amazon' version='[21,22)' ]
+[INFO] Found matching toolchain for type jdk: JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] 
+[INFO] --- jacoco:0.8.14:prepare-agent (prepare-agent) @ jackson-merge-patch-validations ---
+[INFO] argLine set to -javaagent:/Users/francisco.acevedo/.m2/repository/org/jacoco/org.jacoco.agent/0.8.14/org.jacoco.agent-0.8.14-runtime.jar=destfile=/Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-validations/target/jacoco.exec
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ jackson-merge-patch-validations ---
+[INFO] skip non existing resourceDirectory /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-validations/src/main/resources
+[INFO] 
+[INFO] --- compiler:3.15.0:compile (default-compile) @ jackson-merge-patch-validations ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 8 source files with javac [forked debug release 21] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ jackson-merge-patch-validations ---
+[INFO] Copying 2 resources from src/test/resources to target/test-classes
+[INFO] 
+[INFO] --- compiler:3.15.0:testCompile (default-testCompile) @ jackson-merge-patch-validations ---
+[INFO] Toolchain in maven-compiler-plugin: JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 3 source files with javac [forked debug release 21] to target/test-classes
+[INFO] 
+[INFO] --- surefire:3.5.5:test (default-test) @ jackson-merge-patch-validations ---
+[INFO] Tests are skipped.
+[INFO] 
+[INFO] --- jacoco:0.8.14:report (report) @ jackson-merge-patch-validations ---
+[INFO] Skipping JaCoCo execution due to missing execution data file.
+[INFO] 
+[INFO] --- jar:3.5.0:jar (default-jar) @ jackson-merge-patch-validations ---
+[INFO] Set Build-Jdk-Spec based on toolchain in maven-jar-plugin JDK[/Users/francisco.acevedo/.sdkman/candidates/java/21.0.8-amzn]
+[INFO] Building jar: /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-validations/target/jackson-merge-patch-validations-4.0.0.jar
+[INFO] 
+[INFO] --- source:3.4.0:jar-no-fork (attach-sources) @ jackson-merge-patch-validations ---
+[INFO] Building jar: /Applications/eclipse/workspace/jackson-merge-patch/jackson-merge-patch-validations/target/jackson-merge-patch-validations-4.0.0-sources.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for Jackson Merge Patch 4.0.0:
+[INFO] 
+[INFO] Jackson Merge Patch ................................ SUCCESS [  2.145 s]
+[INFO] Jackson Merge Patch Core ........................... SUCCESS [  3.228 s]
+[INFO] Jackson Merge Patch Validations .................... SUCCESS [  2.495 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  8.277 s
+[INFO] Finished at: 2026-04-13T12:22:21-06:00
+[INFO] ------------------------------------------------------------------------

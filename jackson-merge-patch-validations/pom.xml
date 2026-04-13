@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.github.jeffnelson</groupId>
         <artifactId>jackson-merge-patch-parent</artifactId>
-        <version>3.0.0</version>
+        <version>4.0.0</version>
     </parent>
 
     <artifactId>jackson-merge-patch-validations</artifactId>
@@ -17,9 +17,7 @@
     <description>Validation constraint annotations for PatchField types supporting RFC-7396 merge-patch</description>
 
     <properties>
-        <commons-lang3.version>3.5</commons-lang3.version>
-        <validation-api.version>2.0.1.Final</validation-api.version>
-        <hibernate-validator.version>6.2.5.Final</hibernate-validator.version>
+        <commons-lang3.version>3.20.0</commons-lang3.version>
     </properties>
 
     <dependencies>
@@ -35,9 +33,8 @@
             <version>${commons-lang3.version}</version>
         </dependency>
         <dependency>
-            <groupId>javax.validation</groupId>
-            <artifactId>validation-api</artifactId>
-            <version>${validation-api.version}</version>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -46,18 +43,19 @@
 
         <!-- Test dependencies -->
         <dependency>
-            <groupId>org.hibernate</groupId>
+            <groupId>org.hibernate.validator</groupId>
             <artifactId>hibernate-validator</artifactId>
-            <version>${hibernate-validator.version}</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>com.google.guava</groupId>
