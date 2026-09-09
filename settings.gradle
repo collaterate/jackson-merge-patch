@@ -1,2 +1,0 @@
-include 'jackson-merge-patch-core'
-include 'jackson-merge-patch-validations'
